@@ -1,0 +1,23 @@
+.backdrop.is-hidden .modal {
+    transform: scale(0);
+}
+
+.modal {
+    position: absolute;
+    padding: 40px;
+    width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    background-color: var(--white-color);
+    transition: transform 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-icon {
+    transition: fill var(--transition);
+    ;
+}
+
+.button__close:hover .client-icon {
+    fill: var(--accent-color);
+}
+

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a class="logo header__logo" lang="en" href="./index.html"
           >Web<span class="header__logo-studio--color">Studio</span>
@@ -56,7 +56,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main class="main">
       <section class="title">
         <div class="container">
@@ -68,48 +68,48 @@
       </section>
       <section class="features">
         <div class="container">
-          <ul class="wrap">
-            <li class="features__list">
+          <ul class="features__list">
+            <li class="features__item">
               <div class="features__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="features__list--item">Внимание к деталям</h3>
-              <p class="features__list--aside">
+              <h3 class="features__title">Внимание к деталям</h3>
+              <p class="features__description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features__list">
+            <li class="features__item">
               <div class="features__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="features__list--item">Пунктуальность</h3>
-              <p class="features__list--aside">
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features__list">
+            <li class="features__item">
               <div class="features__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="features__list--item">Планирование</h3>
-              <p class="features__list--aside">
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features__list">
+            <li class="features__item">
               <div class="features__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="features__list--item">Современные технологии</h3>
-              <p class="features__list--aside">
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -119,8 +119,8 @@
       <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
-          <ul class="wrap">
-            <li class="work__list">
+          <ul class="work__list">
+            <li class="work__item">
               <img
                 src="./images/img1.jpg"
                 width="370"
@@ -129,7 +129,7 @@
               />
               <p class="work__text">Десктопные приложения</p>
             </li>
-            <li class="work__list">
+            <li class="work__item">
               <img
                 src="./images/img2.jpg"
                 width="370"
@@ -138,7 +138,7 @@
               />
               <p class="work__text">Мобильные приложения</p>
             </li>
-            <li class="work__list">
+            <li class="work__item">
               <img src="./images/img3.jpg" width="370" height="294" alt="Подбор цветовых решений" />
               <p class="work__text">Дизайнерские решения</p>
             </li>
@@ -147,13 +147,26 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="title__team">Наша команда</h2>
-          <ul class="wrap">
-            <li class="team__list">
-              <img src="./images/comand1.jpg" width="270" height="260" alt="Игорь Демьяненко" />
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <img
+                class="team__card-photo"
+                srcset="
+                  ./images/team/team1-desktop.jpg    270w,
+                  ./images/team/team1-tablet.jpg     354w,
+                  ./images/team/team1-mobile.jpg     450w,
+                  ./images/team/team1-desktop@2x.jpg 540w,
+                  ./images/team/team1-tablet@2x.jpg  708w,
+                  ./images/team/team1-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team1-mobile.jpg"
+                alt="Фото Игоря Демьяненко"
+              />
               <div class="team__card">
-                <h3 class="team__name">Игорь Демьяненко</h3>
-                <p class="team__prof" lang="en">Product Designer</p>
+                <h3 class="team__card-name">Игорь Демьяненко</h3>
+                <p class="team__card-prof" lang="en">Product Designer</p>
                 <ul class="soc-list">
                   <li class="soc-list__item">
                     <a class="soc-list__link soc-list__link--color-grey" href="">
@@ -186,11 +199,24 @@
                 </ul>
               </div>
             </li>
-            <li class="team__list">
-              <img src="./images/comand2.jpg" width="270" height="260" alt="Ольга Репина" />
+            <li class="team__item">
+              <img
+                class="team__card-photo"
+                srcset="
+                  ./images/team/team2-desktop.jpg    270w,
+                  ./images/team/team2-tablet.jpg     354w,
+                  ./images/team/team2-mobile.jpg     450w,
+                  ./images/team/team2-desktop@2x.jpg 540w,
+                  ./images/team/team2-tablet@2x.jpg  708w,
+                  ./images/team/team2-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team2-mobile.jpg"
+                alt="Фото Игоря Демьяненко"
+              />
               <div class="team__card">
-                <h3 class="team__name">Ольга Репина</h3>
-                <p class="team__prof" lang="en">Frontend Developer</p>
+                <h3 class="team__card-name">Ольга Репина</h3>
+                <p class="team__card-prof" lang="en">Frontend Developer</p>
                 <ul class="soc-list">
                   <li class="soc-list__item">
                     <a class="soc-list__link soc-list__link--color-grey" href="">
@@ -223,11 +249,24 @@
                 </ul>
               </div>
             </li>
-            <li class="team__list">
-              <img src="./images/comand3.jpg" width="270" height="260" alt="Николай Тарасов" />
+            <li class="team__item">
+              <img
+                class="team__card-photo"
+                srcset="
+                  ./images/team/team3-desktop.jpg    270w,
+                  ./images/team/team3-tablet.jpg     354w,
+                  ./images/team/team3-mobile.jpg     450w,
+                  ./images/team/team3-desktop@2x.jpg 540w,
+                  ./images/team/team3-tablet@2x.jpg  708w,
+                  ./images/team/team3-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team3-mobile.jpg"
+                alt="Фото Игоря Демьяненко"
+              />
               <div class="team__card">
-                <h3 class="team__name">Николай Тарасов</h3>
-                <p class="team__prof" lang="en">Marketing</p>
+                <h3 class="team__card-name">Николай Тарасов</h3>
+                <p class="team__card-prof" lang="en">Marketing</p>
                 <ul class="soc-list">
                   <li class="soc-list__item">
                     <a class="soc-list__link soc-list__link--color-grey" href="">
@@ -260,11 +299,24 @@
                 </ul>
               </div>
             </li>
-            <li class="team__list">
-              <img src="./images/comand4.jpg" width="270" height="260" alt="Михаил Ермаков" />
+            <li class="team__item">
+              <img
+                class="team__card-photo"
+                srcset="
+                  ./images/team/team4-desktop.jpg    270w,
+                  ./images/team/team4-tablet.jpg     354w,
+                  ./images/team/team4-mobile.jpg     450w,
+                  ./images/team/team4-desktop@2x.jpg 540w,
+                  ./images/team/team4-tablet@2x.jpg  708w,
+                  ./images/team/team4-mobile@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:480px) 450px, 100vw"
+                src="./images/team/team4-mobile.jpg"
+                alt="Фото Игоря Демьяненко"
+              />
               <div class="team__card">
-                <h3 class="team__name">Михаил Ермаков</h3>
-                <p class="team__prof" lang="en">UI Designer</p>
+                <h3 class="team__card-name">Михаил Ермаков</h3>
+                <p class="team__card-prof" lang="en">UI Designer</p>
                 <ul class="soc-list">
                   <li class="soc-list__item">
                     <a class="soc-list__link soc-list__link--color-grey" href="">
@@ -303,43 +355,43 @@
       <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
-          <ul class="wrap">
-            <li class="clients__list">
+          <ul class="clients__list">
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__list">
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__list">
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__list">
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__list">
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo5"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients__list">
+            <li class="clients__item">
               <a class="clients__link" href="">
                 <svg width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo6"></use>
@@ -350,7 +402,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer__wrap container">
         <div class="footer__item">
           <div class="footer__logo">
@@ -424,7 +476,7 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button__close" type="button" data-modal-close>

@@ -1,7 +1,14 @@
 .work {
-    position: relative;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: relative;
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .work__title {
@@ -14,12 +21,17 @@
     margin-bottom: 50px;
 }
 
-.work__list:not(:last-child) {
-    margin-right: 30px;
+.work__list {
+    display: flex;
+    align-items: center;
 }
 
-.work__list {
+.work__item {
     position: relative;
+}
+
+.work__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .work__text {

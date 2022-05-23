@@ -122,24 +122,35 @@
           <ul class="work__list">
             <li class="work__item">
               <img
-                src="./images/img1.jpg"
+                class="work__img"
+                srcset="./images/work/img1.jpg 1x, ./images/work/img1@2x.jpg 2x"
+                src="./images/work/img1.jpg"
+                alt="Создание структуры и написание кода"
                 width="370"
                 height="294"
-                alt="Создание структуры и написание кода"
               />
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="work__item">
               <img
-                src="./images/img2.jpg"
+                class="work__img"
+                srcset="./images/work/img2.jpg 1x, ./images/work/img2@2x.jpg 2x"
+                src="./images/work/img2.jpg.jpg"
+                alt="Создание приложения для мобильного"
                 width="370"
                 height="294"
-                alt="Создание приложения для мобильного"
               />
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work__item">
-              <img src="./images/img3.jpg" width="370" height="294" alt="Подбор цветовых решений" />
+              <img
+                class="work__img"
+                srcset="./images/work/img3.jpg 1x, ./images/work/img3@2x.jpg 2x"
+                src="./images/work/img3.jpg.jpg"
+                alt="Подбор цветовых решений"
+                width="370"
+                height="294"
+              />
               <p class="work__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -402,81 +413,79 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
-      <div class="footer__wrap container">
-        <div class="footer__item">
-          <div class="footer__logo">
-            <a class="logo" lang="en" href="./index.html"
-              >Web<span class="footer__logo-studio--color">Studio</span>
-            </a>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__wrap">
+          <div class="footer__item">
+            <div class="footer__logo">
+              <a class="logo" lang="en" href="./index.html"
+                >Web<span class="footer__logo-studio--color">Studio</span>
+              </a>
+            </div>
+            <address>
+              <ul class="address__list">
+                <li class="address__item">
+                  <p>г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="address__item">
+                  <a class="footer__contacts" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <address>
-            <ul>
-              <li class="address__list">
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
+          <div class="conect">
+            <p class="conect__item">присоединяйтесь</p>
+            <ul class="soc-list">
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list--color-white" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__list">
-                <a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list--color-white" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__list">
-                <a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list--color-white" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc-list__item">
+                <a class="soc-list__link soc-list--color-white" href="">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="conect">
-          <p class="conect__item">присоединяйтесь</p>
-          <ul class="soc-list">
-            <li class="soc-list__item">
-              <a class="soc-list__link soc-list--color-white" href="">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a class="soc-list__link soc-list--color-white" href="">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a class="soc-list__link soc-list--color-white" href="">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc-list__item">
-              <a class="soc-list__link soc-list--color-white" href="">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="footer__form">
-          <div>
-            <label class="footer__label" for="footer-mail">Подпишитесь на рассылку</label>
-            <input
-              class="footer__input"
-              type="text"
-              name="mail"
-              id="footer-mail"
-              placeholder="E-mail"
-            />
           </div>
-          <button class="button footer__button--position" type="submit">
-            Подписаться
-            <svg class="footer-button-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        </div>
+        <div class="footer__form">
+          <p class="footer__form-title">Подпишитесь на рассылку</p>
+          <form class="footer__form-item">
+            <input class="footer__input" type="mail" name="mail" placeholder="E-mail" />
+            <button class="button footer__button--position" type="submit">
+              Подписаться
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="button__close" type="button" data-modal-close>
@@ -557,5 +566,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

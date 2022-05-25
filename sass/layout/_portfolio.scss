@@ -18,7 +18,8 @@
 }
 
 .card__item {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     transition: box-shadow var(--transition);
     &:hover,
     &:focus {
@@ -69,8 +70,7 @@
         }
 }
 
-.card-item {
-    flex-direction: column;
+.card__content {
     flex-grow: 1;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;

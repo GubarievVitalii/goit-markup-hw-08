@@ -857,7 +857,6 @@ a {
 @media screen and (min-width: 1200px) {
   .work {
     position: relative;
-    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -1249,7 +1248,8 @@ a {
 }
 
 .card__item {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   transition: box-shadow var(--transition);
 }
 .card__item:hover, .card__item:focus {
@@ -1298,8 +1298,7 @@ a {
   transform: translateY(0%);
 }
 
-.card-item {
-  flex-direction: column;
+.card__content {
   flex-grow: 1;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
